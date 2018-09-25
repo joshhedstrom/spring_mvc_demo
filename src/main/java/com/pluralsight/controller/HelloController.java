@@ -12,7 +12,7 @@ public class HelloController {
 
 		model.addAttribute("greeting", "Hello World");
 
-		return "Hello world";
+		return "hello";
 
 	}
 
