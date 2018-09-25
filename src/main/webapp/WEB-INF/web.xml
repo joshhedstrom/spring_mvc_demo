@@ -6,6 +6,20 @@
 	id="WebApp_ID" 
 	version="3.0">
 	
+	<servlet>
+		<servlet-name>fitTrackerServlet</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServelet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>/WEB-INF/config/servlet-config.xml</param-value>
+		</init-param>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>fitTrackerServlet</servlet-name>
+		<url-pattern>*.html</url-pattern>
+	</servlet-mapping>
+	
   <display-name>Archetype Created Web Application</display-name>
   
 </web-app>
